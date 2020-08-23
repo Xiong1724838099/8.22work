@@ -1,0 +1,16 @@
+.form-horizontal{
+    width: 500px;
+    height: 260px;
+    box-shadow: 0 0 10px rebeccapurple;
+    position: absolute;
+    left: 0;top: 0;right: 0;bottom: 0;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+.form-horizontal h1{
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}

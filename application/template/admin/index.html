@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,body{
+            width: 100%;height: 100%;
+        }
+        body{
+            padding: 0;margin: 0;
+        }
+        .header{
+            width: 960px;min-height: 20%;
+            background:plum;
+            margin: 0 auto;
+        }
+        .header h1{
+            text-align: center;
+            padding-top: 35px;
+        }
+        .logininfo{
+            float: right;
+            margin-right: 30px;
+        }
+        .main{
+            width: 960px;height: 70%;
+            border: 1px solid plum;
+            margin: 0 auto;
+        }
+        .bottom{
+            width: 100%;min-height: 10%;
+            position: relative;
+        }
+        .bottom div{
+            position: absolute;
+            left: 0;top: 0;bottom: 0;right: 0;margin: auto;
+            text-align: center;
+            line-height: 40px;
+        }
+        .left{
+            width: 25%;height: 100%;border-right: 1px solid plum;
+            float: left;box-sizing: border-box;
+        }
+        .right{
+            width: 75%;height: 100%;
+            float: right;box-sizing: border-box;
+        }
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<!--分帧技术 分窗口技术 border是边框-->
+<!--<iframe src="http://baidu.com" frameborder="0"></iframe>-->
+<!--<iframe src="http://sxuek.com" frameborder="10"></iframe>-->
+<div class="header">
+    <h1>欢迎来到xx管理系统</h1>
+    <div class="logininfo">
+        <span>用户：{$uname}</span>
+        <span>
+                <a href="/mvc2/index.php/admin/index/logout">退出登录</a>
+            </span>
+    </div>
+</div>
+<div class="main">
+    <div class="left">
+        <ul>
+            <li>
+                用户管理
+                <ul class="son">
+                    <li>
+                        <a href="" target="main">添加用户</a>
+                    </li>
+                    <li>
+                        <a href="" target="main">修改用户</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                栏目管理
+                <ul class="son">
+                    <li>添加栏目</li>
+                    <li>修改栏目</li>
+                </ul>
+            </li>
+            <li>
+                内容管理
+                <ul class="son">
+                    <li>添加内容</li>
+                    <li>修改内容</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="right">
+        <iframe src="" frameborder="0" name="main"></iframe>
+    </div>
+</div>
+<div class="bottom">
+    <div>xx版权信息，xxx制作 联系方式</div>
+</div>
+</body>
+</html>
